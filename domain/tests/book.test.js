@@ -29,6 +29,11 @@ describe('Book', () => {
     expect(myBook.getWords()).toBe(100);
   });
 
+  it('return the correct 0 words', () => {
+    myBook = new Book('Cuentos de la Selva', 'Horacio Quiroga', 350);
+    expect(myBook.getWords()).toBe(0);
+  });
+
   it('check title is a string', () => {
     expect(() => myBook = new Book(451, 1, 350, 100)).toThrow();
   });
