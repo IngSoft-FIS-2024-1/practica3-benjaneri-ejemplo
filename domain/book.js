@@ -73,7 +73,7 @@ class Book {
   }
 
   wordsPerPage() {
-    // TODO
+    return this.#words / this.#pages;
   }
 
   toString() {

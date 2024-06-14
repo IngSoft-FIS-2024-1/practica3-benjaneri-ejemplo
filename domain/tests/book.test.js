@@ -60,4 +60,9 @@ describe('Book', () => {
   it('toString()', () => {
     expect(myBook.toString()).toBe('Título: Cuentos de la Selva Autor: Horacio Quiroga Páginas: 350 Palabras: 100');
   });
+
+  it('wordsPerPage()', () => {
+    const expectedAverage = 100 / 350;
+    expect(myBook.wordsPerPage()).toBe(expectedAverage);
+  });
 });
